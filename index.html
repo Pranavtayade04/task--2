@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="card">
+            <h2>Contact Us</h2>
+            <p class="subtitle">We'd love to hear from you!</p>
+            <form id="contactForm">
+                <label>First Name *</label>
+                <input type="text" id="firstName" placeholder="First Name" required>
+
+                <label>Last Name *</label>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+
+                <label>Email Address *</label>
+                <input type="email" id="email" placeholder="Email Address" required>
+
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Phone Number">
+
+                <label>Message *</label>
+                <textarea id="message" placeholder="Your message..." required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        
+        <div class="card">
+            <h2>Todo List</h2>
+            <p class="subtitle">Organize your tasks!</p>
+            <div class="todo-input">
+                <input type="text" id="taskInput" placeholder="Enter your task here...">
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+            <ul id="taskList"></ul>
+            <div class="stats">
+                <span id="totalTasks">Total: 0</span>
+                <span id="completedTasks">Completed: 0</span>
+                <span id="pendingTasks">Pending: 0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
